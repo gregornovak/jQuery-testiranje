@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Narrow Jumbotron Template for Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Testiranje</h1>
+        <button id="btn1">Gumb 1</button>
+        <button id="btn2">Gumb 2</button>
+        <button id="btn3">Gumb 3</button>
+        <button id="btn4">Gumb 4</button>
+      </div>
+
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <div id="panel1" class="panel panel-primary">
+          <div class="panel-heading">
+            #1
+          </div>
+          <div class="panel-body">
+            Vsebina #1
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <div id="panel2" class="panel panel-primary">
+          <div class="panel-heading">
+            #2
+          </div>
+          <div class="panel-body">
+            Vsebina #2
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <div id="panel3" class="panel panel-primary">
+          <div class="panel-heading">
+            #3
+          </div>
+          <div class="panel-body">
+            Vsebina #3
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <div id="panel4" class="panel panel-primary">
+          <div class="panel-heading">
+            #4
+          </div>
+          <div class="panel-body">
+            Vsebina #4
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <p>Hja</p>
+        <h2 id="mali">Mali</h2>
+        <h2 id="velik">Velik</h2>
+      </div>
+    </div> <!-- /container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <!-- <script src="js/bootstrap.min.js"></script> -->
+   <script src="node_modules/jquery/src/jquery.js"></script>
+  <script>
+
+      $(function(){
+        $("#btn1").on("click", function(){
+          $("#panel1").toggle(500);
+        });
+
+        $("#btn2").on("click", function(){
+          $("#panel2").toggle(500);
+        });
+
+        $("#btn3").on("click", function(){
+          $("#panel3").toggle(500);
+        });
+
+        $("#btn4").on("click", function(){
+          $("#panel4").toggle(500);
+        });
+
+        $("#mali").on("click", function(){
+            $("#mali").toggleClass('green');
+        });
+        $("#velik").on("click", function(){
+            $("#velik").toggleClass('green');
+        });
+
+
+
+
+      });
+
+
+  </script>
+  </body>
+</html>
